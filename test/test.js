@@ -6,7 +6,7 @@ describe("obj-push instance test", () => {
     let foo = {'foo':'bar'};
     let bar = {'bar':'foo'};
 
-    foo = push(foo, bar);
+    foo.push(bar);
     if(foo.bar != bar.bar)
       throw new Error("Fail to add object, "+JSON.stringify(foo));
     done();
@@ -16,11 +16,10 @@ describe("obj-push instance test", () => {
     let foo = {'foo':'bar'};
     let bar = {'bar':'foo','foo':'foo','bor':'off'};
     
-    foo = push(foo, bar);
+    foo.push(bar);
     if(foo.bar != bar.bar || foo.foo != bar.foo || foo.bor != bar.bor)
       throw new Error("Fail to add object, "+JSON.stringify(foo));
     done();
   });
-
    
 });
