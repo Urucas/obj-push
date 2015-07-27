@@ -1,1 +1,18 @@
-# obj-push
+# obj-push [![Build Status](https://travis-ci.org/Urucas/obj-push.svg)](https://travis-ci.org/Urucas/obj-push)
+
+# Usage
+Merge an object with other object keys
+
+```bash
+npm install --save obj-push
+```
+
+```javascript
+import push from 'obj-push';
+let foo = {'foo':'bar'};
+let bar = {'bar':'foo'};
+
+foo = push(foo, bar);
+console.log(foo)
+//  foo: 'bar', bar: 'foo' }
+```
