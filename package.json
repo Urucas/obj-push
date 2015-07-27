@@ -1,0 +1,24 @@
+{
+  "name": "obj-push",
+  "version": "0.0.1",
+  "description": "",
+  "main": "node/index.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha test/* --compilers js:babel/register -t 15s",
+    "build": "make clean && make node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Urucas/obj-push.git"
+  },
+  "author": "Urucas <hello@urucas.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Urucas/obj-push/issues"
+  },
+  "homepage": "https://github.com/Urucas/obj-push",
+  "devDependencies": {
+    "babel": "^5.8.9",
+    "mocha": "^2.2.5"
+  }
+}
