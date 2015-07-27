@@ -12,7 +12,7 @@ import push from 'obj-push';
 let foo = {'foo':'bar'};
 let bar = {'bar':'foo'};
 
-foo = push(foo, bar);
+foo.push(bar);
 console.log(foo)
 //  foo: 'bar', bar: 'foo' }
 ```
