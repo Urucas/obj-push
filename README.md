@@ -9,10 +9,14 @@ npm install --save obj-push
 
 ```javascript
 import push from 'obj-push';
+Object.prototype.push = function(obj){
+  return push(this, obj);
+};
+
 let foo = {'foo':'bar'};
 let bar = {'bar':'foo'};
 
 foo.push(bar);
 console.log(foo)
-//  foo: 'bar', bar: 'foo' }
+//  { foo: 'bar', bar: 'foo' }
 ```
