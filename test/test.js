@@ -1,4 +1,7 @@
 import push from '../lib/';
+Object.prototype.push = function(obj){
+  return push(this, obj);
+};
 
 describe("obj-push instance test", () => {
 
